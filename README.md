@@ -1,31 +1,49 @@
-🚗 Number Plate Recognition and Speed Measurement 
-A computer vision-based system designed to detect vehicle number plates and measure vehicle speed using real-time video feeds.
+# 🚗 Number Plate Recognition and Speed Measurement (Ongoing)
 
-📌 Features
-Vehicle Detection using YOLO (You Only Look Once) object detection model.
+A real-time system for detecting vehicle number plates and measuring vehicle speed using computer vision and deep learning.
 
-Number Plate Extraction with OpenCV image processing techniques.
+## 📌 Features
 
-OCR Integration to read alphanumeric license plates from cropped images.
+- **Vehicle Detection** using YOLO (You Only Look Once) for high-accuracy object localization.
+- **Number Plate Localization** via OpenCV for image preprocessing and plate isolation.
+- **Text Extraction (OCR)** using EasyOCR or Tesseract to read license plate characters.
+- **Speed Measurement** by calculating displacement across video frames over time.
+- **Real-Time Processing** optimized for surveillance and enforcement use cases.
 
-Speed Estimation by calculating frame-based displacement over time.
+## 🛠 Tech Stack
 
-Real-time Processing with video feed inputs.
+- **Programming Language**: Python  
+- **Frameworks & Libraries**:  
+  - YOLOv5 (via Ultralytics) – Object Detection  
+  - OpenCV – Image Processing & Tracking  
+  - EasyOCR / Tesseract – Optical Character Recognition  
+  - TensorFlow – Model integration and training support
 
-🛠 Tech Stack
-Language: Python
+## 📷 Workflow
 
-Libraries & Tools: YOLOv5, OpenCV, EasyOCR/Tesseract, TensorFlow
+1. **Capture** video stream or use recorded footage.
+2. **Detect** vehicles and number plates using YOLO.
+3. **Crop & Process** plates using OpenCV filters.
+4. **Read** alphanumeric data via OCR.
+5. **Track** vehicle across frames and calculate speed using frame difference & distance covered.
 
-Applications: Traffic surveillance, law enforcement, and automated toll systems.
+## 🚧 Project Status
 
-📷 Example Workflow
-Capture video stream
+🛠 Currently in development:  
+- Improving OCR accuracy on blurry or angled plates  
+- Refining speed estimation with camera calibration  
+- Testing with different lighting and vehicle scenarios
 
-Detect vehicle and license plate using YOLO
+## 📁 Future Enhancements
 
-Process image using OpenCV
+- GUI Dashboard for live monitoring  
+- Database integration for storing plate numbers and timestamps  
+- Integration with traffic violation alert systems
 
-Apply OCR to extract plate number
+## 👨‍💻 Contributors
 
-Track vehicle movement to estimate speed
+- Ashutosh Mishra – Lead Developer
+
+---
+
+> This project is being developed for research and educational purposes. Not intended for commercial deployment (yet).
